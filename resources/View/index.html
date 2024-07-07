@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi Desafio de Logica de Programacion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../../public/images/Logo.png" alt="">
+        </div>
+        <div class="container__primario">
+            <form class="formulario" action="">
+                <textarea class="formulario__textarea" name="" id="inputTextarea" rows="10" cols="30"></textarea>
+                <p id="pInfo"></p>
+                <div id="message"></div>
+                <div class="section__buttons">
+                    <button id="encryptButton"></button>
+                    <button id="decryptButton"></button>
+                </div>
+
+            </form>
+        </div>
+        <div class="container__secundario">
+            <div class="container__secundario__muniecoTextInfo">
+                <img id="imgMunieco" src="../../public/images/munieco.png" alt="">
+                <h3 id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h3>
+                <p id="parrafoInfo">Ingresa el texto que desees encriptar o desencriptar</p>
+                <textarea hidden readonly="readonly" id="ouputTextarea" rows="10" cols="30"></textarea>
+                <button hidden id="copyButton">copiar</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+    <script src="../JS/app.js"></script>
+</body>
+
+</html>

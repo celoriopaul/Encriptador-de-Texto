@@ -1,0 +1,162 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+     :root {
+        --color-primario: #E5E5E5;
+        --color-secundario: #0A3871;
+        --color-terciario: #D8DFE8;
+        --color-cuarto: #FFFFFF;
+        --color-quinto: #495057;
+        --fuente-Inter: "Inter", sans-serif;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: var(--color-primario);
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0 20px;
+        height: calc(100vh - 80px);
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .container .logo {
+        height: 48px;
+        width: 120px;
+        align-self: flex-start;
+        margin: 40px 40px 0 -40px;
+    }
+    
+    .container__primario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 575px;
+        box-sizing: border-box;
+        margin-bottom: 76px;
+    }
+    
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 16px;
+        width: 90%;
+        height: 600px;
+        box-sizing: border-box;
+        margin-top: 168px;
+    }
+    
+    .formulario__textarea {
+        height: 100%;
+        resize: none;
+        outline: none;
+        border: none;
+        background-color: var(--color-primario);
+        font-family: var(--fuente-Inter);
+        color: var(--color-secundario);
+        font-size: 32px;
+    }
+    
+    .formulario__textarea::placeholder {
+        color: var(--color-secundario);
+    }
+    
+    #pInfo {
+        font-family: var(--fuente-Inter);
+        font-size: 12px;
+        color: var(--color-quinto);
+    }
+    
+    #message {
+        font-family: var(--fuente-Inter);
+        font-size: 12px;
+    }
+    
+    #encryptButton {
+        background-color: var(--color-secundario);
+        color: var(--color-cuarto);
+        width: 328px;
+        height: 67px;
+        border-radius: 24px;
+    }
+    
+    #decryptButton {
+        background-color: var(--color-primario);
+        width: 328px;
+        height: 67px;
+        border-radius: 24px;
+        color: var(--color-secundario);
+        border: 1px solid var(--color-secundario);
+    }
+    
+    .container__secundario {
+        box-sizing: border-box;
+    }
+    
+    .container__secundario__muniecoTextInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 32px;
+        background-color: var(--color-cuarto);
+        padding: 20px;
+        margin: 75px 50px 50px 0;
+        margin-bottom: 0;
+        width: 350px;
+        height: 650px;
+    }
+    
+    .container__secundario__muniecoTextInfo img {
+        width: 336px;
+        height: 304px;
+    }
+    
+    .container__secundario__muniecoTextInfo h3 {
+        font-family: var(--fuente-Inter);
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .container__secundario__muniecoTextInfo p {
+        font-family: var(--fuente-Inter);
+        color: var(--color-quinto);
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #ouputTextarea {
+        height: 100%;
+        width: 100%;
+        resize: none;
+        outline: none;
+        border: none;
+        background-color: var(--color-cuarto);
+        font-family: var(--fuente-Inter);
+        color: var(--color-secundario);
+        margin: 20px;
+        font-size: 20px;
+        cursor: not-allowed;
+    }
+    
+    #copyButton {
+        background-color: var(--color-primario);
+        width: 328px;
+        height: 67px;
+        border-radius: 24px;
+        color: var(--color-secundario);
+        border: 1px solid var(--color-secundario);
+    }
